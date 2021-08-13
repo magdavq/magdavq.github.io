@@ -1,0 +1,18 @@
+p{
+  color: #ff00ff;
+  background: rgb(0, 255, 128);
+}
+body{
+  background: yellow;
+  font-family: 'Tourney', cursive;
+}
+
+.rojo{
+  color: red;
+}
+.azul{
+  color: blue;
+}
+.cursiva{
+  font-style: italic;
+}

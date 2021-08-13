@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E01_MEDIOS_TEC4</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="contenedorPrincipal">
+        <nav>
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../tecnologia/">Tecnología 4</a></li>
+                <li><a class="active"  href="../vectores/">Vectores</a></li>
+                <li><a href="../montajes/">Montajes</a></li>
+            </ul>
+        </div>
+
+
+        <h1 class="tituloPrincipal">Vectores</h1>
+
+
+        <div class="row">
+            <div class="column">
+                <h2>Plantas</h2>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="column">
+                <img src="../img/14.jpg">
+                <h3>Planta 1</h3>
+            </div>
+            <div class="column">
+                <img src="../img/15.jpg">
+                <h3>Planta 2</h3>
+            </div>
+            <div class="column">
+                <img src="../img/16.jpg">
+                <h3>Planta 3</h3>
+            </div>
+            <div class="column">
+                <img src="../img/17.jpg">
+                <h3>Planta 4</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <p>Para estructurar este edificio se deben considerar tres aspectos: la estructura hexagonal,
+                    las losas que componen los niveles y la estructura del zócalo que dejó el pimentón.
+                    </p>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img src="../img/18.jpg">
+                <p id="vector_rojo">El rojo representa los elementos verticales que estructuran la figura hexagonal.
+                    En este caso un sistema de pilares ubicados cada 3 metros y retranqueados 1 metro de la losa perimetralmente.
+                    Estos a su vez son arriostrados a partir de diagonales que unen un extremo superior de un pilar con el extremo inferior de otro y así sucesivamente.
+                    </p>
+            </div>
+            <div class="column">
+                <img src="../img/19.jpg">
+                <br>
+                <br>
+                <p id=vector_azul>En color azul se encuentran los elementos horizontales que conforman el envigado de cada nivel estructurando las losas.
+                    En este caso se plantea una grilla central que se ubica bajo los ejes de los pilares y a los extremos del hexágono,
+                    dos vigas respectivamente que siguen la forma diagonal de los extremos del hexágono.
+                    </p>
+            </div>
+            <div class="column">
+                <img src="../img/20.jpg">
+                <p id="vector_verde">Finalmente, y en color verde, la estructura del zócalo que se ubican en los puntos mas importantes de la
+                    figura irregular del pimentón siguiendo la misma lógica que el sistema perimetral solo que en este caso
+                    las diagonales que unen los elementos verticales son de perfiles tubulares de acero.
+                    Cada pilar vertical a su vez tiene otra estructura diagonal de madera pero que une el extremo inferior de cada pilar
+                    con el borde de la losa en la parte superior de esta diagonal.</p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="column">
+              <p>Presione el botón para ver las imágenes</p>
+                <button class="button" onclick="mostrarFotosEstructuras()">Estructuras</button>
+            </div>
+        </div>
+
+        <div class="row" id="fotos_estructuras">
+            <div class="column">
+                <img src="../img/22.jpg">
+            </div>
+            <div class="column">
+                <img src="../img/24.jpg">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <h2>Plantas</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img src="../img/25.jpg">
+            </div>
+            <div class="column">
+                <img src="../img/26.jpg">
+            </div>
+            <div class="column">
+                <img src="../img/27.jpg">
+            </div>
+            <div class="column">
+                <img src="../img/28.jpg">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <h3>Elevación</h3>
+                <img src="../img/29.jpg">
+                <img src="../img/30.jpg">
+            </div>
+            <div class="column">
+                <h3>Esfuerzos verticales</h3>
+                <p>
+                    La estructura transmite cargas verticales de forma uniforme desde el cuarto nivel de la estructura hasta el primero.
+                    El edificio cuenta con una estructura de pilares perimetrales de 20x20 cms retranqueados un metro del perímetro de la losa,
+                    los cuales se amarran entre sí a través de diagonales que se insertan en los pilares por medio de herrajes metálicos.
+                    A su vez el zócalo (presente en las losas de los niveles 2, 3 y 4) está estructurado con pilares de 10x10 cms que se apoyan en el envigado.
+                    Cada pilar tiene una diagonal que transmite la carga desde el borde del zócalo hasta los pilares (variando en cada nivel dependiendo del tamaño del zócalo).
+                    Estos pilares a su vez se amarran a través de perfiles tubulares de acero generando un anillo estructural que refuerza la estructura desde su núcleo.</p>
+                    <br>
+                    <h3>Esfuerzos horizontales</h3>
+                    <p>
+                        El edificio estructura cada nivel a partir de un sistema de vigas de 20x30 que forma una grilla en el núcleo que luego termina en voladizo alrededor de todo el perímetro de las losas.
+                        Este sistema se amarra a partir de uniones madera-madera a través de cola de milano en su mayoría y de un sistema de encaje en los vértices de la estructura.
+                        En cada nudo perimetral llegan los pilares estructurales, por lo que la carga horizontal responde a ambos sentidos de la estructura.
+                        Por otra parte, a las placas de CLT utilizadas en cada nivel actúan como un diafragma rígido que complementa la estructura y ayuda a amarrarla y arriostrarla.</p>
+
+                </div>
+            <div class="column">
+                <h3>Corte</h3>
+                <img src="../img/31.jpg">
+                <img src="../img/32.jpg">
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="../js/script.js"></script>
+
+
+
+</body>
+</html>
